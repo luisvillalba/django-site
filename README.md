@@ -1,4 +1,5 @@
 ## A basic django website
-# django-site
+# django-website
 
 This is a basic Django website
+
