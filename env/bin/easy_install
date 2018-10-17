@@ -1,4 +1,4 @@
-#!/Users/lmazzey/code/github/django-site/site/bin/python3
+#!/Users/lmazzey/code/github/django-site/env/bin/python2.7
 
 # -*- coding: utf-8 -*-
 import re
