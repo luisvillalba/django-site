@@ -1,4 +1,4 @@
-#!/Users/lmazzey/code/github/django-site/site/bin/python
+#!/Users/lmazzey/code/github/django-site/env/bin/python
 
 import sys
 import getopt
