@@ -20,5 +20,6 @@ from hello import views
 
 urlpatterns = [
     url(r'^', include('hello.urls')),
+    url(r'^', include('poll.urls')),
     url(r'^admin/', admin.site.urls),
 ]

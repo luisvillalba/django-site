@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <title>My app</title>
+    <link rel="stylesheet" href="{% static "css/votes.css" %}"/>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    {% if form %}
+      <form method="POST">
+        {{form.as_p}}
+        <input type="submit">
+        {% csrf_token %}
+      </form>
+    {% endif %}
+  </body>
+</html>
