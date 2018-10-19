@@ -16,10 +16,8 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.conf.urls import include
-from hello import views
 
 urlpatterns = [
-    url(r'^', include('hello.urls')),
-    url(r'^', include('poll.urls')),
+    url(r'^', include('home.urls')),
     url(r'^admin/', admin.site.urls),
 ]
