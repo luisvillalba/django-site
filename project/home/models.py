@@ -4,17 +4,16 @@ from __future__ import unicode_literals
 from django.db import models
 from django.conf import settings
 from django.contrib.auth.models import User
-from django.contrib.auth.base_user import AbstractBaseUser
-from django.contrib.auth.models import UserManager
 
 
-class AuthorModel(AbstractBaseUser):
-    REQUIRED_FIELDS = ['username']
-    USERNAME_FIELD = 'email'
-    name = models.CharField(max_length=100)
-    username = models.CharField(max_length=100, unique=True)
-    email = models.CharField(max_length=100, unique=True)
-    objects = UserManager()
+class AuthorModel(models.Model):
+    user = models.OneToOneField(User)
+
+    picture = models.ImageField(upload_to='profile_pics',blank=True)
+    instagram = models.URLField(blank=True)
+    
+    def __str__():
+        return self.user.username
 
 
 class PostModel(models.Model):
