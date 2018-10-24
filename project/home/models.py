@@ -7,12 +7,12 @@ from django.contrib.auth.models import User
 
 
 class AuthorModel(models.Model):
-    user = models.OneToOneField(User)
+    user = models.OneToOneField(User, null=True)
 
-    picture = models.ImageField(upload_to='profile_pics',blank=True)
-    instagram = models.URLField(blank=True)
-    
-    def __str__():
+    picture = models.ImageField(upload_to='profile-pics',null=True)
+    instagram = models.URLField(null=True)
+
+    def __str__(self):
         return self.user.username
 
 
