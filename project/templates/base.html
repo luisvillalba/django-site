@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <meta name="description" content="My Page">
     <title>{{ title|default:'Django site' }}</title>
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/style.css"> 
   </head>
 <body>
   {% include 'partials/navigation.html' %}
   {% block body_block %}{% endblock %}
   {% block scripts %}{% endblock %}
+  
 </body>
 </html>
